@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row my-3">
+            <div class="col-md-4 offset-4">
+                <div class="card bg-success text-light">
+                    <div class="card-body">
+
+                        <div class="my-3">
+                            <label for="ASon">A sonini kiriting</label>
+                            <input  id="ASon" type="number" class="form-control my-2" placeholder="A sonini kiriting">
+                        </div>
+
+                        <div class="my-3">
+                            <label for="BSon">B sonini kiriting</label>
+                            <input  id="BSon" type="number" class="form-control my-2" placeholder="B sonini kiriting">
+                        </div>
+                        
+                        <div class="my-3">
+                            <label for="oper">Amalni tanlang</label>
+                            <select  id="oper" class="form-control my-2">
+                                <option value="+">Qo'shish</option>
+                                <option value="-">Ayirish</option>
+                                <option value="*">Ko'paytirish</option>
+                                <option value="/">Bo'lish</option>
+                            </select>
+                        </div>
+                        <div class="my-4 d-flex justify-content-between">
+                            <div>
+                                <span>Natija: </span> <b id="display">0</b>
+                            </div>
+                            <button class="btn btn-dark" onclick="Xisob()">Hisoblash</button>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
